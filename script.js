@@ -3,6 +3,7 @@ let crtAnswers = {
 };
 let i = parseInt(1);
 let score = parseInt(0);
+
 function verify(opt, qid) {
     let ans = crtAnswers[qid];
     if (opt == ans) {
@@ -20,7 +21,6 @@ function verify(opt, qid) {
         i = i+1;
     }, 1000);
 }
-
 function displayScore() {
     document.getElementById('Score').style.display="block";
     document.getElementById('Score').textContent = "Your score is " + score;
